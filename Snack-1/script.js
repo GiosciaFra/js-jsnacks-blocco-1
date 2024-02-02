@@ -7,9 +7,10 @@ let word1 = prompt ("Inserisci la prima parola");
 
 let word2 = prompt ("Inserisci la segunda parola");
 
-const shorterWord = (word1.length <= word2.length) ? word1 : word2;
-console.log ("La parola più corta è " + shorterWord);
+// const shorterWord = (word1.length <= word2.length) ? word1 : word2;
+// console.log ("La parola più corta è " + shorterWord);
 
-const longerWord = (word1.length > word2.length) ? word1 : word2;
-console.log("La parola più lunga è " + longerWord);
+// const longerWord = (word1.length > word2.length) ? word1 : word2;
+// console.log("La parola più lunga è " + longerWord);
 
+document.getElementById("result").innerHTML = "La parola più corta è " + ((word1.length <= word2.length) ? word1 : word2) + "<br>La parola più lunga è " + ((word1.length > word2.length) ? word1 : word2);
